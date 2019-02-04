@@ -50,7 +50,7 @@ def handle_text_message(event):
         response += result + '\n'
     response = response.rstrip('\n')
 
-    line_bot_api.reply_message(cd
+    line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=response),
     )
