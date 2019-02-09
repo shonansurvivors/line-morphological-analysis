@@ -114,3 +114,5 @@ except ImportError:
 
 if not DEBUG:
     SECRET_KEY = os.environ['SECRET_KEY']
+    LINE_CHANNEL_ACCESS_TOKEN = os.environ['LINE_CHANNEL_ACCESS_TOKEN']
+    LINE_CHANNEL_SECRET = os.environ['LINE_CHANNEL_SECRET']
